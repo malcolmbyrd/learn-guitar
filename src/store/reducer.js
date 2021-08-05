@@ -1,5 +1,3 @@
-import React from "react";
-
 const Reducer = (state, action) => {
   switch (action.type) {
     case "STORE_DATA":
@@ -7,6 +5,8 @@ const Reducer = (state, action) => {
         ...state,
         data: action.payload
       };
+    default:
+      throw new Error(`Unknown action type: ${action.type}`)
   }
 }
 
