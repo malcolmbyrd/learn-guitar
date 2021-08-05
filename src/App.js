@@ -1,25 +1,37 @@
-import logo from './logo.svg';
+import React from 'react';
+import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+import { Provider } from 'react-redux';
+import { Store } from './store';
 import './App.css';
+import Weather from "./components/Weather";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Howdy
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const Home = () => (
+  <>
+    <h1>Home</h1>
+  </>
+);
+
+const App = () => (
+  <Router>
+    <Provider store={Store}>
+      <div className="App">
+        <nav>
+          <Link to="/home">Home</Link>&nbsp;&nbsp;&nbsp;&nbsp;
+          <Link to="/weather">Weather</Link>
+        </nav>
+        <div className="main-content">
+          <Switch>
+            <Route path="/home">
+              <Home />
+            </Route>
+            <Route path="/weather">
+              <Weather />
+            </Route>
+          </Switch>
+        </div>
+      </div>
+    </Provider>
+  </Router>
+);
 
 export default App;
