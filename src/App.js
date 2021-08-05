@@ -5,19 +5,9 @@ import Weather from "./components/Weather";
 
 const App = () => (
   <Router>
-      <div className="App App-header">
-        <nav>
-          <Link to="/weather">Weather</Link>
-        </nav>
-      </div>
       <main>
-        <Switch>
-          <Route path="/weather">
-            <Weather />
-          </Route>
-        </Switch>
+        <Weather />
       </main>
-      <footer>Ben's React Weather App</footer>
   </Router>
 );
 
