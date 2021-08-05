@@ -1,13 +1,16 @@
-const Reducer = (state, action) => {
-  switch (action.type) {
-    case "STORE_DATA":
-      return {
-        ...state,
-        data: action.payload
-      };
-    default:
-      throw new Error(`Unknown action type: ${action.type}`)
-  }
+const initialState = {
+  forecast: {}
 }
 
-export default Reducer;
+const reducer = (state = initialState, action) => {
+  if (action.type === 'SET_FORECAST') {
+    return {
+      ...state,
+      forecast: action.payload
+    };
+  }
+
+  return state
+}
+
+export default reducer;
