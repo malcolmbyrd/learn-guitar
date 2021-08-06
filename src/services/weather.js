@@ -1,5 +1,5 @@
 const fetchWeatherForecast = async(latitude, longitude) => {
-  return await fetch(`https://dark-sky.p.rapidapi.com/${latitude},${longitude}?lang=en&units=auto`, {
+  /*return await fetch(`https://dark-sky.p.rapidapi.com/${latitude},${longitude}?lang=en&units=auto`, {
     "method": "GET",
     "headers": {
       "x-rapidapi-key": "b7be7ebb9dmsha20f0124cc17a27p1915f9jsn4f85067659c8",
@@ -12,7 +12,8 @@ const fetchWeatherForecast = async(latitude, longitude) => {
     .catch(err => {
       console.log(`Error: ${err}`);
       return `Error: ${err}`;
-    });
+    });*/
+  alert('Out of API calls on my plan :(');
 };
 
 const WeatherService = { fetchWeatherForecast };
