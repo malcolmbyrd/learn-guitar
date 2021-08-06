@@ -1,12 +1,14 @@
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 import './App.css';
-import Weather from "./components/Weather";
 
 const App = () => (
   <Router>
       <main>
-        <Weather />
+          <h1>Guitar Chords</h1>
+          <ul>
+            <li></li>
+          </ul>
       </main>
   </Router>
 );
