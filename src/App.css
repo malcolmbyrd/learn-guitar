@@ -7,8 +7,26 @@
   pointer-events: none;
 }
 
-#CurrentWeatherTable {
-  margin: 0 auto;
+.chords-container {
+  margin: 20px auto;
+  width: 100%;
+}
+
+.chord-table {
+  margin: 20px auto;
+}
+
+.flex-container {
+  background-color: darkgrey;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flex-container > div {
+  background-color: #f1f1f1;
+  margin: 10px;
+  padding: 20px;
+  font-size: 20px;
 }
 
 @media (prefers-reduced-motion: no-preference) {
