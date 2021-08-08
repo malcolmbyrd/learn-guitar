@@ -1,7 +1,7 @@
 import './App.css';
 import Content from "./components/Content";
-import {FC} from "react";
+import {VFC} from "react";
 
-const App: FC = () => ( <Content /> );
+const App: VFC = () => ( <Content /> );
 
 export default App;

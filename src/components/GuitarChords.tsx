@@ -1,8 +1,8 @@
-import React, {FC, useState} from "react";
+import React, {VFC, useState} from "react";
 import UberChordService from "../services/uberChord";
 import ChordTable from "./ChordTable";
 
-const GuitarChords: FC = () => {
+const GuitarChords: VFC = () => {
   const [chords, setChords] = useState([])
 
   const getChords = (input: string) => {

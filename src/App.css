@@ -9,7 +9,13 @@
 
 .chords-container {
   margin: 20px auto;
-  width: 100%;
+  max-width: 1024px;
+}
+
+div.chord-table-container {
+  width: 280px;
+  border-radius: 20px;
+  box-shadow: 3px 3px 3px black;
 }
 
 .chord-table {
@@ -17,14 +23,15 @@
 }
 
 .flex-container {
-  background-color: darkgrey;
+  border-radius: 12px;
+  background-color: #8493a8;
   display: flex;
   flex-wrap: wrap;
 }
 
 .flex-container > div {
   background-color: #f1f1f1;
-  margin: 10px;
+  margin: 10px auto;
   padding: 20px;
   font-size: 20px;
 }

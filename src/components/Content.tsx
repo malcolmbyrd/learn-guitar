@@ -1,7 +1,7 @@
-import React, {FC} from "react";
+import React, {VFC} from "react";
 import GuitarChords from "./GuitarChords";
 
-const Content: FC = () => (
+const Content: VFC = () => (
   <>
     <main>
       <GuitarChords />

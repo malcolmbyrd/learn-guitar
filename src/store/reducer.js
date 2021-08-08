@@ -1,12 +1,12 @@
 const initialState = {
-  forecast: {}
+  data: {}
 }
 
 const reducer = (state = initialState, action) => {
-  if (action.type === 'SET_FORECAST') {
+  if (action.type === 'ACTION') {
     return {
       ...state,
-      forecast: action.payload
+      data: action.payload
     };
   }
 
