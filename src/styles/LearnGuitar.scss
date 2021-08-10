@@ -15,6 +15,21 @@ div.chord-table-container {
   }
 }
 
+.modal.modal-inner.chord-modal.react-draggable {
+  width: 500px;
+  height: 500px;
+}
+
 .chord-table {
   margin: 20px auto;
+}
+
+.chord-tab {
+  font-family: monospace;
+  text-align: center;
+  width: 100%;
+}
+
+.verbal-tab-instructions {
+  text-align: left;
 }

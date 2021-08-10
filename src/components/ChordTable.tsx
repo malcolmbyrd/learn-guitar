@@ -36,15 +36,15 @@ return (
           <td>Strings</td>
           <td>{chord.strings}</td>
         </tr>
-        <tr>
-          <td>Tones</td>
+        {/*<tr>
+          <td>Notes</td>
           <td>{chord.tones}</td>
-        </tr>
+        </tr>*/}
         </tbody>
       </table>
     </div>
     {chordModalOpen && (
-      <ChordModal setChordModalOpen={setChordModalOpen} />
+      <ChordModal setChordModalOpen={setChordModalOpen} chord={chord} />
     )}
   </>
 )}
