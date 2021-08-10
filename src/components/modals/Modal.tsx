@@ -65,8 +65,9 @@ export const Footer: VFC<{ onClick: any, onSubmit: any }> = ({onClick, onSubmit}
   );
 };
 
-export const Modal: VFC<{ classname: string, children: ReactElement }> = ({classname, children}) => (
-  <div className={`modal modal-outer ${classname}`}>
+export const Modal: VFC<{ classname: string, children: ReactElement, closeFunction: Function }> =
+  ({classname, children, closeFunction}) => (
+  <div className={`modal modal-outer ${classname}`} onClick={() => closeFunction()}>
     <Draggable>
       <div className={`modal modal-inner ${classname}`}>
         {children}
