@@ -1,17 +1,26 @@
-import React, {VFC, useState} from "react";
+import React, {VFC, useState, useEffect} from "react";
 import UberChordService from "../services/uberChord";
 import ChordTable from "./ChordTable";
 
 const GuitarChords: VFC = () => {
   const [chords, setChords] = useState([])
+  const [searchValue, setSearchValue] = useState('a');
 
   const getChords = (input: string) => {
-    UberChordService.fetchChordsLike(input)
+    UberChordService.fetchChordsLike(input.toUpperCase())
       .then(r => {
-        setChords(r)
-        console.log(r)
+        setChords(r);
       })
   }
+
+  const handleChange = (input: string) => {
+    setSearchValue(input);
+    getChords(input);
+  }
+
+  useEffect(() => {
+    getChords(searchValue);
+  }, [])
 
   return (
     <>
@@ -22,8 +31,9 @@ const GuitarChords: VFC = () => {
         </h2>
         <input
           type="text"
-          onChange={e => getChords(e.target.value)}
+          onChange={e => handleChange(e.target.value)}
           name="chord-input"
+          value={searchValue}
           placeholder="Get chords similar to"
         />
         <div className="chords-container flex-container">
