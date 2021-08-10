@@ -29,7 +29,7 @@ const GuitarChords: VFC = () => {
         <div className="chords-container flex-container">
           {chords.length > 0 && chords.map((chord, i) => {
             return (
-              <ChordTable chord={chord} key={i} />
+              <ChordTable chord={chord} key={i}/>
             )
           })}
         </div>

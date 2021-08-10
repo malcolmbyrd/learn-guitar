@@ -4,7 +4,7 @@ import GuitarChords from "./GuitarChords";
 const Content: VFC = () => (
   <>
     <main>
-      <GuitarChords />
+      <GuitarChords/>
     </main>
   </>
 )

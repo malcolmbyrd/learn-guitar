@@ -9,7 +9,7 @@
 
 .flex-container {
   border-radius: 12px;
-  background-color: #8493a8;
+  background-color: #c9d6e7;
   display: flex;
   flex-wrap: wrap;
 }
@@ -19,6 +19,11 @@
   margin: 10px auto;
   padding: 20px;
   font-size: 20px;
+}
+
+.fa-times {
+  position: relative;
+  right: 35px;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -47,6 +52,7 @@ main {
   text-align: center;
   padding: 25px;
 }
+
 footer {
   padding: 2px;
   min-height: 100px;
@@ -57,6 +63,7 @@ footer {
   font-size: small;
   text-align: center;
 }
+
 header {
   padding: 25px;
 }
@@ -71,3 +78,4 @@ header {
 }
 
 @import 'styles/LearnGuitar';
+@import 'styles/modal';
