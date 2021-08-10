@@ -1,0 +1,20 @@
+.chords-container {
+  margin: 20px auto;
+  max-width: 1024px;
+}
+
+div.chord-table-container {
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  transition: box-shadow .3s;
+  width: 280px;
+
+  &:hover {
+    box-shadow: 0 0 11px rgba(0,0,0,.8);
+    cursor: pointer;
+  }
+}
+
+.chord-table {
+  margin: 20px auto;
+}

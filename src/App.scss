@@ -7,21 +7,6 @@
   pointer-events: none;
 }
 
-.chords-container {
-  margin: 20px auto;
-  max-width: 1024px;
-}
-
-div.chord-table-container {
-  width: 280px;
-  border-radius: 20px;
-  box-shadow: 3px 3px 3px black;
-}
-
-.chord-table {
-  margin: 20px auto;
-}
-
 .flex-container {
   border-radius: 12px;
   background-color: #8493a8;
@@ -84,3 +69,5 @@ header {
     transform: rotate(360deg);
   }
 }
+
+@import 'styles/LearnGuitar';
