@@ -29,9 +29,8 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
-    "build": "react-scripts build",
+    "prebuild": "yarn install",
+    "build": "yarn run build",
     "test": "jest",
     "eject": "react-scripts eject"
   },
