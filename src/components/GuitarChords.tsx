@@ -26,11 +26,9 @@ const GuitarChords: VFC = () => {
     <>
       <h1>Guitar Chords</h1>
       <div>
-        <h2>
-          Find Similar Chords
-        </h2>
         <input
           type="text"
+          className="guitar-input"
           onChange={e => handleChange(e.target.value)}
           name="chord-input"
           value={searchValue}

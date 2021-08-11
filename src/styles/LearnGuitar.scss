@@ -24,6 +24,19 @@ div.chord-table-container {
   width: 100%;
 }
 
+.guitar-input {
+  border-radius: 4x;
+  cursor: pointer;
+  font-family: fantasy;
+  font-size: 18px;
+  transition: box-shadow .3s;
+  padding: 4px;
+
+  &:hover {
+    box-shadow: 0 0 50px rgba(171, 202, 236, 0.5);
+  }
+}
+
 .verbal-tab-instructions {
   text-align: left;
 }
