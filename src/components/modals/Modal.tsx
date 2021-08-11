@@ -1,25 +1,12 @@
 import React, {ReactElement, VFC} from 'react';
 import Draggable from 'react-draggable';
-import {FaTimes} from 'react-icons/fa';
 
-export const Header: VFC<{ title: string, onClick: any }> = ({title, onClick}) => {
-  const handleOnClick = () => {
-    if (onClick) {
-      onClick();
-    }
-  };
+export const Header: VFC<{ title: string, onClick: any }> = ({title}) => {
 
   return (
     <div className="modal-header">
       <div className="modal-title">
         <h1>{title}</h1>
-        <button
-          type="button"
-          className="modal-close"
-          onClick={() => handleOnClick()}
-        >
-          <FaTimes className="fa-times"/>
-        </button>
       </div>
     </div>
   );
@@ -69,7 +56,7 @@ export const Modal: VFC<{ classname: string, children: ReactElement, closeFuncti
   ({classname, children, closeFunction}) => (
   <div className={`modal modal-outer ${classname}`} onClick={() => closeFunction()}>
     <Draggable>
-      <div className={`modal modal-inner ${classname}`}>
+      <div className={`modal modal-inner ${classname}`} onClick={e => e.preventDefault()}>
         {children}
       </div>
     </Draggable>

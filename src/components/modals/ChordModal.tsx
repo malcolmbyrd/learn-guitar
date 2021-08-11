@@ -36,7 +36,7 @@ const ChordModal: VFC<{
   return (
     <Modal classname={'chord-modal'} closeFunction={() => setChordModalOpen(false)}>
       <>
-        <Header title={`Chord Details - ${chordName}`} onClick={() => setChordModalOpen(false)}/>
+        <Header title={`Chord Details - ${chordName}`} onClick={() => null}/>
         <Content className={'chord-modal'}>
           <div>
             <div className="chord-tab">
