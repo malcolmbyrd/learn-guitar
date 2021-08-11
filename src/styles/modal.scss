@@ -10,13 +10,12 @@
   .modal-inner {
     background-color: white;
     border-radius: 10px;
-    height: auto;
+    height: 375px;
     margin: 100px auto;
-    max-height: 75vh;
     overflow-y: scroll;
     overflow-x: hidden;
     text-align: left;
-    width: 50vw;
+    width: 600px;
   }
 
   .modal-header {
@@ -96,6 +95,7 @@
 @media (max-width: 1024px) {
   .modal .modal-inner {
     font-size: 16px;
+    height: 300px;
     width: 75vw;
   }
 }
@@ -103,6 +103,7 @@
 @media (max-width: 768px) {
   .modal .modal-inner {
     font-size: 13px;
+    height: 275px;
     width: 95vw;
   }
 }
