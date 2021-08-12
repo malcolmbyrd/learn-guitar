@@ -2,7 +2,7 @@ import {createContext, ReactElement, Reducer, useReducer, VFC} from 'react'
 
 const initialState = {}
 
-const reducer: Reducer<{}, {type: string, payload: any}> = (state = initialState, action) => {
+const reducer: Reducer<{}, { type: string, payload: any }> = (state = initialState, action) => {
   switch (action.type) {
     case 'SET_CHORDS':
       return {
@@ -14,12 +14,12 @@ const reducer: Reducer<{}, {type: string, payload: any}> = (state = initialState
         ...state,
         page: action.payload
       }
-    }
+  }
 
   return state
 }
 
-const Store:VFC<{ children: ReactElement }> = ({ children }) => {
+const Store: VFC<{ children: ReactElement }> = ({children}) => {
   const [state, dispatch] = useReducer(reducer, initialState)
   return (
     <Context.Provider value={[state, dispatch]}>

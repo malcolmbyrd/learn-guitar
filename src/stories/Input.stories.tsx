@@ -1,13 +1,13 @@
 import React from 'react'
-import { ComponentStory, ComponentMeta } from '@storybook/react';
+import {ComponentStory, ComponentMeta} from '@storybook/react';
 
-import { Input } from './Input';
+import {Input} from './Input';
 
 export default {
   title: 'Example/Input',
   component: Input,
   argTypes: {
-    type: {control: 'text' },
+    type: {control: 'text'},
     className: {control: 'text'},
     placeholder: {control: 'text'},
     id: {control: 'text'}

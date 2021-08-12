@@ -1,4 +1,4 @@
-import { MainNavigation, MainNavigationItem } from "@wfp/ui";
+import {MainNavigation, MainNavigationItem} from "@wfp/ui";
 import {useContext} from "react";
 import {Context} from "../store";
 import {setPage} from "../helper/helper";
