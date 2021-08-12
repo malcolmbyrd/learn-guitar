@@ -23,20 +23,20 @@ const ChordModal: VFC<{
       case 'x':
         return '';
       case '1':
-        return `Pointer Finger, Fret ${stringPosition} on the ${string} string`;
+        return <div>Pointer Finger, Fret {stringPosition} on the {string} string<br/></div>;
       case '2':
-        return `Middle Finger, Fret ${stringPosition} on the ${string} string`;
+        return <div>Middle Finger, Fret {stringPosition} on the {string} string<br/></div>;
       case '3':
-        return `Ring Finger, Fret ${stringPosition} on the ${string} string`;
+        return <div>Ring Finger, Fret {stringPosition} on the {string} string<br/></div>;
       case '4':
-        return `Pinky Finger, Fret ${stringPosition} on the ${string} string`;
+        return <div>Pinky Finger, Fret {stringPosition} on the {string} string<br/></div>;
     }
   }
 
   return (
-    <Modal classname={'chord-modal'}>
+    <Modal classname={'chord-modal'} closeFunction={() => setChordModalOpen(false)}>
       <>
-        <Header title={`Chord Details - ${chordName}`} onClick={() => setChordModalOpen(false)}/>
+        <Header title={`Chord Details - ${chordName}`} onClick={() => null}/>
         <Content className={'chord-modal'}>
           <div>
             <div className="chord-tab">
@@ -57,12 +57,12 @@ const ChordModal: VFC<{
               )}
               {strings && (
                 <div className="verbal-tab-instructions">
-                  {getVerbalHelp(fingers[5], strings[5], 'high e')} <br/><br/>
-                  {getVerbalHelp(fingers[4], strings[4], 'B')} <br/><br/>
-                  {getVerbalHelp(fingers[3], strings[3], 'G')} <br/><br/>
-                  {getVerbalHelp(fingers[2], strings[2], 'D')} <br/><br/>
-                  {getVerbalHelp(fingers[1], strings[1], 'A')} <br/><br/>
                   {getVerbalHelp(fingers[0], strings[0], 'low E')}
+                  {getVerbalHelp(fingers[1], strings[1], 'A')}
+                  {getVerbalHelp(fingers[2], strings[2], 'D')}
+                  {getVerbalHelp(fingers[3], strings[3], 'G')}
+                  {getVerbalHelp(fingers[4], strings[4], 'B')}
+                  {getVerbalHelp(fingers[5], strings[5], 'high e')}
                 </div>
               )}
             </div>

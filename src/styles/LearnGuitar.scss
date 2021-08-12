@@ -15,11 +15,6 @@ div.chord-table-container {
   }
 }
 
-.modal.modal-inner.chord-modal.react-draggable {
-  width: 500px;
-  height: 500px;
-}
-
 .chord-table {
   margin: 20px auto;
 }
@@ -28,6 +23,19 @@ div.chord-table-container {
   font-family: monospace;
   text-align: center;
   width: 100%;
+}
+
+.guitar-input {
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: monospace;
+  font-size: 18px;
+  transition: box-shadow .3s;
+  padding: 4px;
+
+  &:hover {
+    box-shadow: 0 0 50px rgba(171, 202, 236, 0.5);
+  }
 }
 
 .verbal-tab-instructions {

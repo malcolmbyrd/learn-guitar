@@ -1,29 +1,38 @@
-import React, {VFC, useState} from "react";
-import UberChordService from "../services/uberChord";
-import ChordTable from "./ChordTable";
+import React, {VFC, useState, useEffect, useContext} from "react"
+import { Context } from "../store"
+import UberChordService from "../services/uberChord"
+import ChordTable from "./ChordTable"
 
 const GuitarChords: VFC = () => {
-  const [chords, setChords] = useState([])
+  // @ts-ignore
+  const [state, dispatch] = useContext(Context)
 
-  const getChords = (input: string) => {
-    UberChordService.fetchChordsLike(input)
-      .then(r => {
-        setChords(r)
-        console.log(r)
-      })
+  const [chords, setChords] = useState([])
+  const [searchValue, setSearchValue] = useState('a');
+
+  const handleChange = (input: string) => {
+    setSearchValue(input);
   }
+
+  useEffect(() => {
+    UberChordService.fetchChordsLike(searchValue.toUpperCase())
+      .then(r => {
+        setChords(r);
+        dispatch({type: 'SET_CHORDS', payload: r})
+      })
+  }, [dispatch, searchValue])
 
   return (
     <>
+      {state.data}
       <h1>Guitar Chords</h1>
       <div>
-        <h2>
-          Find Similar Chords
-        </h2>
         <input
           type="text"
-          onChange={e => getChords(e.target.value)}
+          className="guitar-input"
+          onChange={e => handleChange(e.target.value)}
           name="chord-input"
+          value={searchValue}
           placeholder="Get chords similar to"
         />
         <div className="chords-container flex-container">
