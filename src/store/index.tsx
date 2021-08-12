@@ -3,12 +3,18 @@ import {createContext, ReactElement, Reducer, useReducer, VFC} from 'react'
 const initialState = {}
 
 const reducer: Reducer<{}, {type: string, payload: any}> = (state = initialState, action) => {
-  if (action.type === 'SET_CHORDS') {
-    return {
-      ...state,
-      chords: action.payload
-    };
-  }
+  switch (action.type) {
+    case 'SET_CHORDS':
+      return {
+        ...state,
+        chords: action.payload
+      };
+    case 'SET_PAGE':
+      return {
+        ...state,
+        page: action.payload
+      }
+    }
 
   return state
 }

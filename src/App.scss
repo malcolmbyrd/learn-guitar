@@ -81,5 +81,7 @@ header {
   }
 }
 
+@import '~@wfp/ui/src/globals/scss/styles.scss';
 @import 'styles/LearnGuitar';
 @import 'styles/modal';
+@import 'styles/homepage';
