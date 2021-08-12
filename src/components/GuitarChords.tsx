@@ -2,7 +2,6 @@ import React, {VFC, useState, useEffect, useContext} from "react"
 import { Context } from "../store"
 import UberChordService from "../services/uberChord"
 import ChordTable from "./ChordTable"
-import {Input} from "../stories/Input";
 
 const GuitarChords: VFC = () => {
   // @ts-ignore
