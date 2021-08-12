@@ -1,5 +1,5 @@
 import React, {VFC, useState, useEffect, useContext} from "react"
-import { Context } from "../store"
+import {Context} from "../store"
 import UberChordService from "../services/uberChord"
 import ChordTable from "./ChordTable"
 
