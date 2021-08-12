@@ -1,5 +1,5 @@
 import {useState, VFC} from "react";
-import ChordModal from "./modals/ChordModal";
+import ChordModal from "./ChordModal";
 
 const ChordTable:
   VFC<{
