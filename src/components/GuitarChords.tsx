@@ -8,7 +8,8 @@ const GuitarChords: VFC = () => {
   const [state, dispatch] = useContext(Context)
 
   const [chords, setChords] = useState([])
-  const [searchValue, setSearchValue] = useState('a');
+  const [viewAsTabs, setViewAsTabs] = useState(false)
+  const [searchValue, setSearchValue] = useState('a')
 
   const handleChange = (input: string) => {
     setSearchValue(input);
@@ -18,6 +19,7 @@ const GuitarChords: VFC = () => {
     UberChordService.fetchChordsLike(searchValue.toUpperCase())
       .then(r => {
         setChords(r);
+        console.log(r);
         dispatch({type: 'SET_CHORDS', payload: r})
       })
   }, [dispatch, searchValue])
@@ -35,10 +37,22 @@ const GuitarChords: VFC = () => {
           value={searchValue}
           placeholder="Find Chords Like"
         />
+        <div>
+          <label htmlFor="TablatureCheck">
+            View as tabs?
+            <input
+              id="TablatureCheck"
+              name="tablatureCheck"
+              checked={viewAsTabs}
+              onChange={() => setViewAsTabs(!viewAsTabs)}
+              type="checkbox"
+            />
+          </label>
+        </div>
         <div className="chords-container flex-container">
           {chords.length > 0 && chords.map((chord, i) => {
             return (
-              <ChordTable chord={chord} key={i}/>
+              <ChordTable chord={chord} key={i} viewAsTabs={viewAsTabs} />
             )
           })}
         </div>

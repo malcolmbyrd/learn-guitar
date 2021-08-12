@@ -4,7 +4,7 @@ import {ComponentStory, ComponentMeta} from '@storybook/react';
 import {Input} from './Input';
 
 export default {
-  title: 'Example/Input',
+  title: 'Components/Input',
   component: Input,
   argTypes: {
     type: {control: 'text'},

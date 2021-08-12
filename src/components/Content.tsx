@@ -8,6 +8,7 @@ import {Button} from "../stories/Button";
 const Content: VFC = () => {
   // @ts-ignore
   const [state, dispatch] = useContext(Context)
+  const welcome = 'Welcome. Choose an action to get started.';
 
   return (
     <>
@@ -16,7 +17,8 @@ const Content: VFC = () => {
         {(!state.page || state.page === 'Home') && (
           <>
             <div className="homepage-actions">
-              <Button size="large" label='Learn Chords' onClick={() => setPage('LearnChords', dispatch)}/>
+              <div className="welcome"><h1>{welcome}</h1></div>
+              <Button size="large" label='Learn Chords' onClick={() => setPage('LearnChords', dispatch)} />
             </div>
           </>
         )}
