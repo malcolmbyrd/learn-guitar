@@ -18,6 +18,7 @@ const GuitarChords: VFC = () => {
     UberChordService.fetchChordsLike(searchValue.toUpperCase())
       .then(r => {
         setChords(r);
+        console.log(r);
         dispatch({type: 'SET_CHORDS', payload: r})
       })
   }, [dispatch, searchValue])

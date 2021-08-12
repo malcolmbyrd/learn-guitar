@@ -1,5 +1,7 @@
 import {useState, VFC} from "react";
 import ChordModal from "./ChordModal";
+import '../styles/LearnGuitar.scss';
+import '../styles/modal.scss';
 
 const ChordTable:
   VFC<{
