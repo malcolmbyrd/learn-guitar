@@ -1,5 +1,4 @@
 import React, {ReactElement, VFC} from 'react';
-import Draggable from 'react-draggable';
 
 export const Header: VFC<{ title: string, onClick: any }> = ({title}) => {
 
@@ -55,10 +54,8 @@ export const Footer: VFC<{ onClick: any, onSubmit: any }> = ({onClick, onSubmit}
 export const Modal: VFC<{ classname: string, children: ReactElement, closeFunction: Function }> =
   ({classname, children, closeFunction}) => (
     <div className={`modal modal-outer ${classname}`} onClick={() => closeFunction()}>
-      <Draggable>
-        <div className={`modal modal-inner ${classname}`} onClick={e => e.preventDefault()}>
-          {children}
-        </div>
-      </Draggable>
+      <div className={`modal modal-inner ${classname}`} onClick={e => e.preventDefault()}>
+        {children}
+      </div>
     </div>
   );

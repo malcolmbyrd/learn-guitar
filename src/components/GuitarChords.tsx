@@ -10,22 +10,17 @@ const GuitarChords: VFC = () => {
   const [chords, setChords] = useState([])
   const [searchValue, setSearchValue] = useState('a');
 
-  const getChords = (input: string) => {
-    UberChordService.fetchChordsLike(input.toUpperCase())
+  const handleChange = (input: string) => {
+    setSearchValue(input);
+  }
+
+  useEffect(() => {
+    UberChordService.fetchChordsLike(searchValue.toUpperCase())
       .then(r => {
         setChords(r);
         dispatch({type: 'SET_CHORDS', payload: r})
       })
-  }
-
-  const handleChange = (input: string) => {
-    setSearchValue(input);
-    getChords(input);
-  }
-
-  useEffect(() => {
-    getChords(searchValue);
-  }, [searchValue])
+  }, [dispatch, searchValue])
 
   return (
     <>
