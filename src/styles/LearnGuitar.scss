@@ -9,6 +9,10 @@ div.chord-table-container {
   transition: box-shadow .3s;
   width: 280px;
 
+  .chord-tab {
+    font-size: 14px;
+  }
+
   &:hover {
     box-shadow: 0 0 11px rgba(0, 0, 0, .8);
     cursor: pointer;
@@ -40,4 +44,8 @@ div.chord-table-container {
 
 .verbal-tab-instructions {
   text-align: left;
+}
+
+.welcome {
+  margin-bottom: 10px;
 }
