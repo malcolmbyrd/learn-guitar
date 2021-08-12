@@ -33,7 +33,7 @@ const GuitarChords: VFC = () => {
           onChange={e => handleChange(e.target.value)}
           name="chord-input"
           value={searchValue}
-          placeholder="Get chords similar to"
+          placeholder="Find Chords Like"
         />
         <div className="chords-container flex-container">
           {chords.length > 0 && chords.map((chord, i) => {
