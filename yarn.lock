@@ -71,6 +71,27 @@
     semver "^6.3.0"
     source-map "^0.5.0"
 
+"@babel/core@^7.15.0":
+  version "7.15.0"
+  resolved "https://registry.nlark.com/@babel/core/download/@babel/core-7.15.0.tgz#749e57c68778b73ad8082775561f67f5196aafa8"
+  integrity sha1-dJ5Xxod4tzrYCCd1Vh9n9Rlqr6g=
+  dependencies:
+    "@babel/code-frame" "^7.14.5"
+    "@babel/generator" "^7.15.0"
+    "@babel/helper-compilation-targets" "^7.15.0"
+    "@babel/helper-module-transforms" "^7.15.0"
+    "@babel/helpers" "^7.14.8"
+    "@babel/parser" "^7.15.0"
+    "@babel/template" "^7.14.5"
+    "@babel/traverse" "^7.15.0"
+    "@babel/types" "^7.15.0"
+    convert-source-map "^1.7.0"
+    debug "^4.1.0"
+    gensync "^1.0.0-beta.2"
+    json5 "^2.1.2"
+    semver "^6.3.0"
+    source-map "^0.5.0"
+
 "@babel/generator@^7.12.1", "@babel/generator@^7.15.0":
   version "7.15.0"
   resolved "https://registry.nlark.com/@babel/generator/download/@babel/generator-7.15.0.tgz"
@@ -1514,6 +1535,17 @@
     "@types/yargs" "^15.0.0"
     chalk "^4.0.0"
 
+"@jest/types@^27.0.6":
+  version "27.0.6"
+  resolved "https://registry.nlark.com/@jest/types/download/@jest/types-27.0.6.tgz#9a992bc517e0c49f035938b8549719c2de40706b"
+  integrity sha1-mpkrxRfgxJ8DWTi4VJcZwt5AcGs=
+  dependencies:
+    "@types/istanbul-lib-coverage" "^2.0.0"
+    "@types/istanbul-reports" "^3.0.0"
+    "@types/node" "*"
+    "@types/yargs" "^16.0.0"
+    chalk "^4.0.0"
+
 "@nodelib/fs.scandir@2.1.4":
   version "2.1.4"
   resolved "https://registry.npmjs.org/@nodelib/fs.scandir/-/fs.scandir-2.1.4.tgz"
@@ -1732,6 +1764,20 @@
     lz-string "^1.4.4"
     pretty-format "^26.6.2"
 
+"@testing-library/dom@^8.1.0":
+  version "8.1.0"
+  resolved "https://registry.nlark.com/@testing-library/dom/download/@testing-library/dom-8.1.0.tgz?cache=0&sync_timestamp=1625148456196&other_urls=https%3A%2F%2Fregistry.nlark.com%2F%40testing-library%2Fdom%2Fdownload%2F%40testing-library%2Fdom-8.1.0.tgz#f8358b1883844ea569ba76b7e94582168df5370d"
+  integrity sha1-+DWLGIOETqVpuna36UWCFo31Nw0=
+  dependencies:
+    "@babel/code-frame" "^7.10.4"
+    "@babel/runtime" "^7.12.5"
+    "@types/aria-query" "^4.2.0"
+    aria-query "^4.2.2"
+    chalk "^4.1.0"
+    dom-accessibility-api "^0.5.6"
+    lz-string "^1.4.4"
+    pretty-format "^27.0.2"
+
 "@testing-library/jest-dom@^5.11.4":
   version "5.14.1"
   resolved "https://registry.nlark.com/@testing-library/jest-dom/download/@testing-library/jest-dom-5.14.1.tgz"
@@ -1838,6 +1884,14 @@
   dependencies:
     "@types/node" "*"
 
+"@types/hoist-non-react-statics@^3.3.0":
+  version "3.3.1"
+  resolved "https://registry.nlark.com/@types/hoist-non-react-statics/download/@types/hoist-non-react-statics-3.3.1.tgz?cache=0&sync_timestamp=1621241339435&other_urls=https%3A%2F%2Fregistry.nlark.com%2F%40types%2Fhoist-non-react-statics%2Fdownload%2F%40types%2Fhoist-non-react-statics-3.3.1.tgz#1124aafe5118cb591977aeb1ceaaed1070eb039f"
+  integrity sha1-ESSq/lEYy1kZd66xzqrtEHDrA58=
+  dependencies:
+    "@types/react" "*"
+    hoist-non-react-statics "^3.3.0"
+
 "@types/html-minifier-terser@^5.0.0":
   version "5.1.1"
   resolved "https://registry.npmjs.org/@types/html-minifier-terser/-/html-minifier-terser-5.1.1.tgz"
@@ -1927,6 +1981,16 @@
   dependencies:
     "@types/react" "*"
 
+"@types/react-redux@^7.1.16":
+  version "7.1.18"
+  resolved "https://registry.nlark.com/@types/react-redux/download/@types/react-redux-7.1.18.tgz?cache=0&sync_timestamp=1625795312121&other_urls=https%3A%2F%2Fregistry.nlark.com%2F%40types%2Freact-redux%2Fdownload%2F%40types%2Freact-redux-7.1.18.tgz#2bf8fd56ebaae679a90ebffe48ff73717c438e04"
+  integrity sha1-K/j9Vuuq5nmpDr/+SP9zcXxDjgQ=
+  dependencies:
+    "@types/hoist-non-react-statics" "^3.3.0"
+    "@types/react" "*"
+    hoist-non-react-statics "^3.3.0"
+    redux "^4.0.0"
+
 "@types/react@*", "@types/react@^17.0.16":
   version "17.0.16"
   resolved "https://registry.nlark.com/@types/react/download/@types/react-17.0.16.tgz?cache=0&sync_timestamp=1628222821526&other_urls=https%3A%2F%2Fregistry.nlark.com%2F%40types%2Freact%2Fdownload%2F%40types%2Freact-17.0.16.tgz"
@@ -2007,6 +2071,13 @@
   version "15.0.13"
   resolved "https://registry.npmjs.org/@types/yargs/-/yargs-15.0.13.tgz"
   integrity sha512-kQ5JNTrbDv3Rp5X2n/iUu37IJBDU2gsZ5R/g1/KHOOEc5IKfUFjXT6DENPGduh08I/pamwtEq4oul7gUqKTQDQ==
+  dependencies:
+    "@types/yargs-parser" "*"
+
+"@types/yargs@^16.0.0":
+  version "16.0.4"
+  resolved "https://registry.nlark.com/@types/yargs/download/@types/yargs-16.0.4.tgz?cache=0&sync_timestamp=1625518988312&other_urls=https%3A%2F%2Fregistry.nlark.com%2F%40types%2Fyargs%2Fdownload%2F%40types%2Fyargs-16.0.4.tgz#26aad98dd2c2a38e421086ea9ad42b9e51642977"
+  integrity sha1-JqrZjdLCo45CEIbqmtQrnlFkKXc=
   dependencies:
     "@types/yargs-parser" "*"
 
@@ -2464,6 +2535,11 @@ ansi-styles@^4.0.0, ansi-styles@^4.1.0:
   integrity sha512-zbB9rCJAT1rbjiVDb2hqKFHNYLxgtk8NURxZ3IZwD3F6NtxbXZQCnnSi1Lkx+IDohdPlFp222wVALIheZJQSEg==
   dependencies:
     color-convert "^2.0.1"
+
+ansi-styles@^5.0.0:
+  version "5.2.0"
+  resolved "https://registry.nlark.com/ansi-styles/download/ansi-styles-5.2.0.tgz?cache=0&sync_timestamp=1618995588464&other_urls=https%3A%2F%2Fregistry.nlark.com%2Fansi-styles%2Fdownload%2Fansi-styles-5.2.0.tgz#07449690ad45777d1924ac2abb2fc8895dba836b"
+  integrity sha1-B0SWkK1Fd30ZJKwquy/IiV26g2s=
 
 anymatch@^2.0.0:
   version "2.0.0"
@@ -6173,9 +6249,9 @@ hmac-drbg@^1.0.1:
     minimalistic-assert "^1.0.0"
     minimalistic-crypto-utils "^1.0.1"
 
-hoist-non-react-statics@^3.1.0:
+hoist-non-react-statics@^3.1.0, hoist-non-react-statics@^3.3.0, hoist-non-react-statics@^3.3.2:
   version "3.3.2"
-  resolved "https://registry.npm.taobao.org/hoist-non-react-statics/download/hoist-non-react-statics-3.3.2.tgz"
+  resolved "https://registry.npm.taobao.org/hoist-non-react-statics/download/hoist-non-react-statics-3.3.2.tgz#ece0acaf71d62c2969c2ec59feff42a4b1a85b45"
   integrity sha1-7OCsr3HWLClpwuxZ/v9CpLGoW0U=
   dependencies:
     react-is "^16.7.0"
@@ -9997,6 +10073,16 @@ pretty-format@^26.0.0, pretty-format@^26.6.0, pretty-format@^26.6.2:
     ansi-styles "^4.0.0"
     react-is "^17.0.1"
 
+pretty-format@^27.0.2:
+  version "27.0.6"
+  resolved "https://registry.nlark.com/pretty-format/download/pretty-format-27.0.6.tgz#ab770c47b2c6f893a21aefc57b75da63ef49a11f"
+  integrity sha1-q3cMR7LG+JOiGu/Fe3XaY+9JoR8=
+  dependencies:
+    "@jest/types" "^27.0.6"
+    ansi-regex "^5.0.0"
+    ansi-styles "^5.0.0"
+    react-is "^17.0.1"
+
 process-nextick-args@~2.0.0:
   version "2.0.1"
   resolved "https://registry.npmjs.org/process-nextick-args/-/process-nextick-args-2.0.1.tgz"
@@ -10294,7 +10380,7 @@ react-icons@^4.2.0:
   resolved "https://registry.npm.taobao.org/react-icons/download/react-icons-4.2.0.tgz#6dda80c8a8f338ff96a1851424d63083282630d0"
   integrity sha1-bdqAyKjzOP+WoYUUJNYwgygmMNA=
 
-"react-is@^16.12.0 || ^17.0.0", react-is@^16.6.0, react-is@^16.7.0, react-is@^16.8.1:
+"react-is@^16.12.0 || ^17.0.0", react-is@^16.13.1, react-is@^16.6.0, react-is@^16.7.0, react-is@^16.8.1:
   version "16.13.1"
   resolved "https://registry.npmjs.org/react-is/-/react-is-16.13.1.tgz"
   integrity sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==
@@ -10308,6 +10394,18 @@ react-is@^17.0.2:
   version "17.0.2"
   resolved "https://registry.nlark.com/react-is/download/react-is-17.0.2.tgz?cache=0&sync_timestamp=1628266625985&other_urls=https%3A%2F%2Fregistry.nlark.com%2Freact-is%2Fdownload%2Freact-is-17.0.2.tgz"
   integrity sha1-5pHUqOnHiTZWVVOas3J2Kw77VPA=
+
+react-redux@^7.2.4:
+  version "7.2.4"
+  resolved "https://registry.nlark.com/react-redux/download/react-redux-7.2.4.tgz#1ebb474032b72d806de2e0519cd07761e222e225"
+  integrity sha1-HrtHQDK3LYBt4uBRnNB3YeIi4iU=
+  dependencies:
+    "@babel/runtime" "^7.12.1"
+    "@types/react-redux" "^7.1.16"
+    hoist-non-react-statics "^3.3.2"
+    loose-envify "^1.4.0"
+    prop-types "^15.7.2"
+    react-is "^16.13.1"
 
 react-refresh@^0.8.3:
   version "0.8.3"
@@ -10577,9 +10675,9 @@ redux-thunk@^2.3.0:
   resolved "https://registry.npm.taobao.org/redux-thunk/download/redux-thunk-2.3.0.tgz"
   integrity sha1-UcLBmhhe1Rh6qpotCLZm0NZGdiI=
 
-redux@^4.1.0, redux@^4.1.1:
+redux@^4.0.0, redux@^4.1.0, redux@^4.1.1:
   version "4.1.1"
-  resolved "https://registry.nlark.com/redux/download/redux-4.1.1.tgz"
+  resolved "https://registry.nlark.com/redux/download/redux-4.1.1.tgz#76f1c439bb42043f985fbd9bf21990e60bd67f47"
   integrity sha1-dvHEObtCBD+YX72b8hmQ5gvWf0c=
   dependencies:
     "@babel/runtime" "^7.9.2"

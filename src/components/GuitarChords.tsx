@@ -1,8 +1,12 @@
-import React, {VFC, useState, useEffect} from "react"
+import React, {VFC, useState, useEffect, useContext} from "react"
+import { Context } from "../store"
 import UberChordService from "../services/uberChord"
 import ChordTable from "./ChordTable"
 
 const GuitarChords: VFC = () => {
+  // @ts-ignore
+  const [state, dispatch] = useContext(Context)
+
   const [chords, setChords] = useState([])
   const [searchValue, setSearchValue] = useState('a');
 
@@ -10,6 +14,7 @@ const GuitarChords: VFC = () => {
     UberChordService.fetchChordsLike(input.toUpperCase())
       .then(r => {
         setChords(r);
+        dispatch({type: 'SET_CHORDS', payload: r})
       })
   }
 
@@ -24,6 +29,7 @@ const GuitarChords: VFC = () => {
 
   return (
     <>
+      {state.data}
       <h1>Guitar Chords</h1>
       <div>
         <input

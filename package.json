@@ -6,6 +6,8 @@
   "author": "Ben Byrd",
   "private": true,
   "dependencies": {
+    "@babel/core": "^7.15.0",
+    "@testing-library/dom": "^8.1.0",
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
@@ -19,6 +21,7 @@
     "react-dom": "^17.0.2",
     "react-draggable": "^4.4.3",
     "react-icons": "^4.2.0",
+    "react-redux": "^7.2.4",
     "react-router": "^5.2.0",
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.3",
@@ -70,9 +73,6 @@
     "react-test-renderer": "^17.0.2",
     "sass": "^1.37.5"
   },
-  "release": {
-    "analyzeCommits": "simple-commit-message"
-  },
   "eslintIgnore": [
     "*.test.js",
     "*_spec.js",
@@ -80,7 +80,7 @@
   ],
   "config": {
     "pre-git": {
-      "commit-msg": "simple",
+      "commit-msg": "",
       "pre-commit": [
         "npm run lint"
       ],
