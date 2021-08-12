@@ -23,13 +23,13 @@ const ChordModal: VFC<{
       case 'x':
         return '';
       case '1':
-        return <div>Pointer Finger, Fret {stringPosition} on the {string} string<br /></div>;
+        return <div>Pointer Finger, Fret {stringPosition} on the {string} string<br/></div>;
       case '2':
-        return <div>Middle Finger, Fret {stringPosition} on the {string} string<br /></div>;
+        return <div>Middle Finger, Fret {stringPosition} on the {string} string<br/></div>;
       case '3':
-        return <div>Ring Finger, Fret {stringPosition} on the {string} string<br /></div>;
+        return <div>Ring Finger, Fret {stringPosition} on the {string} string<br/></div>;
       case '4':
-        return <div>Pinky Finger, Fret {stringPosition} on the {string} string<br /></div>;
+        return <div>Pinky Finger, Fret {stringPosition} on the {string} string<br/></div>;
     }
   }
 

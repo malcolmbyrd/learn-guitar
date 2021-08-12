@@ -1,6 +1,6 @@
-import React, {VFC, useState, useEffect} from "react";
-import UberChordService from "../services/uberChord";
-import ChordTable from "./ChordTable";
+import React, {VFC, useState, useEffect} from "react"
+import UberChordService from "../services/uberChord"
+import ChordTable from "./ChordTable"
 
 const GuitarChords: VFC = () => {
   const [chords, setChords] = useState([])
@@ -20,7 +20,7 @@ const GuitarChords: VFC = () => {
 
   useEffect(() => {
     getChords(searchValue);
-  }, [])
+  }, [searchValue])
 
   return (
     <>

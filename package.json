@@ -14,11 +14,11 @@
     "@types/react": "^17.0.16",
     "@types/react-dom": "^17.0.9",
     "eslint": "^7.32.0",
+    "eslint-config-airbnb": "^18.2.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-draggable": "^4.4.3",
     "react-icons": "^4.2.0",
-    "react-redux": "^7.2.4",
     "react-router": "^5.2.0",
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.3",
@@ -32,7 +32,9 @@
     "predeploy": "npm run build",
     "build": "react-scripts build",
     "test": "jest",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "commit": "commit-wizard",
+    "lint": "eslint ./src --max-warnings=0"
   },
   "eslintConfig": {
     "extends": [
@@ -57,9 +59,35 @@
     "@babel/preset-react": "^7.14.5",
     "@reduxjs/toolkit": "^1.6.1",
     "babel-jest": "^26.6.3",
+    "eslint-plugin-import": "^2.24.0",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-react": "^7.24.0",
+    "eslint-plugin-react-hooks": "^4.2.0",
     "jest": "^26.6.0",
     "node-sass": "^6.0.1",
+    "pre-commit": "^1.2.2",
+    "pre-git": "^3.17.1",
     "react-test-renderer": "^17.0.2",
     "sass": "^1.37.5"
+  },
+  "release": {
+    "analyzeCommits": "simple-commit-message"
+  },
+  "eslintIgnore": [
+    "*.test.js",
+    "*_spec.js",
+    ".eslintrc.js"
+  ],
+  "config": {
+    "pre-git": {
+      "commit-msg": "simple",
+      "pre-commit": [
+        "npm run lint"
+      ],
+      "pre-push": [],
+      "post-commit": [],
+      "post-checkout": [],
+      "post-merge": []
+    }
   }
 }
