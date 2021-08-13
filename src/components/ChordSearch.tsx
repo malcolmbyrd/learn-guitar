@@ -9,7 +9,7 @@ const ChordSearch: VFC<{ handleChange: Function, searchValue: string }> = ({hand
       onChange={e => handleChange(e.target.value)}
       name="chord-input"
       value={searchValue}
-      placeholder="Find Chords Like"
+      placeholder="Find Chords"
     />
   )
 }
