@@ -4,6 +4,9 @@ import GuitarChords from "./GuitarChords";
 import Navigation from './Navigation';
 import {setPage} from '../helper/helper';
 import {Button} from "../stories/Button";
+import SecondaryNav from "./SecondaryNav";
+import FindSimilarChords from "./FindSimilarChords";
+import FindChord from "./FindChord";
 
 const Content: VFC = () => {
   // @ts-ignore
@@ -13,6 +16,7 @@ const Content: VFC = () => {
   return (
     <>
       <Navigation/>
+      <SecondaryNav />
       <main>
         {(!state.page || state.page === 'Home') && (
           <>
@@ -24,9 +28,15 @@ const Content: VFC = () => {
         )}
 
         {(state.page && state.page === 'LearnChords') && (
-          <>
-            <GuitarChords/>
-          </>
+          <GuitarChords />
+        )}
+
+        {(!state.page || state.page === 'FindSimilar') && (
+          <FindSimilarChords />
+        )}
+
+        {(!state.page || state.page === 'FindChord') && (
+          <FindChord />
         )}
       </main>
     </>

@@ -10,7 +10,7 @@
   .modal-inner {
     background-color: white;
     border-radius: 10px;
-    height: auto;
+    max-height: 500px;
     margin: 100px auto;
     overflow-y: scroll;
     overflow-x: hidden;
@@ -95,6 +95,7 @@
 @media (max-width: 1024px) {
   .modal .modal-inner {
     font-size: 16px;
+    height: 400px;
     width: 75vw;
   }
 }
@@ -102,6 +103,7 @@
 @media (max-width: 768px) {
   .modal .modal-inner {
     font-size: 13px;
+    max-height: 300px;
     width: 95vw;
   }
 }

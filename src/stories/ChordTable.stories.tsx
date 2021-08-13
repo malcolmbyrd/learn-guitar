@@ -18,7 +18,7 @@ export default {
 
 const Template: ComponentStory<typeof ChordTable> = (args) => <ChordTable {...args} />;
 
-export const Example = Template.bind({});
-Example.args = {
+export const Default = Template.bind({});
+Default.args = {
   chord: chordMock
 };
