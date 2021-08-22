@@ -1,5 +1,11 @@
-# Learn Guitar Chords
-DEMO: https://learnguitar.d2eepw88mno4nw.amplifyapp.com/
+# <a href='https://learnguitar.d2eepw88mno4nw.amplifyapp.com/' target='_blank'>Learn Guitar Chords</a>
+
+This is a pet project in React (Context) / Typescript using storybook and other development tools. The idea is to help the user discover and learn guitar chords.
+The project uses UberChord API, which is a public API that searches for guitar chords and even the chords for full songs.
+
+## TO-DO
+- Add flexibility to the search input so that it receives more intuitive search strings (like 'a minor 9' instead of 'A_m9')
+- Add song search
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
